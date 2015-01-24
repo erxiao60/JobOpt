@@ -20,7 +20,7 @@ cat "test.log" | while read filename;do
     	#echo $filename
 	filename1=`echo ${filename/TODO/} `
         echo $filename1
-        ./BT_Job_0-Raw2Root ./binary/${filename1} >&RawLog
+        ./BT_Job_0-Raw2Root ./binary_service/${filename1} >&RawLog
     fi
  #   lastfile=$filename
     #./CalBgoDyCoe_job ./${filename} >&dyps
